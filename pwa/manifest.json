@@ -10,7 +10,7 @@
     ],
     "scope": "https://euroflock.github.io/constellx",
     "start_url": "https://euroflock.github.io/constellx",
-    "display": "standalone",
-    "theme_color": "#E6E6E6",
-    "background_color": "#E6E6E6"
+    "display": "fullscreen",
+    "theme_color": "#000000",
+    "background_color": "#000000"
   }

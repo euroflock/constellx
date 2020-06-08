@@ -70,7 +70,7 @@ html {
     border-radius: 6px;    
     cursor: pointer;
 }
-.login-button:hover {
+html:not(.mobile) .login-button:hover {
     box-shadow: 0 0 10px;
 }
 
@@ -133,7 +133,7 @@ body, .view, canvas {
     border-left: 1px solid #aaaaaa;
     border-right: 1px solid #ffffff;
 }
-.top > div:hover {
+html:not(.mobile) .top > div:hover {
     opacity: 1;
     border-radius: 4px;
     box-shadow: 0 0 5px 0 black;
@@ -164,12 +164,18 @@ body, .view, canvas {
     transform: rotate(-45deg) !important;
     opacity: 0.8;
 }
+html.mobile .pin {
+    display: none;
+}
 .left {
     right: 100%;
     top: 60px;
     position: absolute;
     overflow: visible;
     width: fit-content;
+}
+html.mobile .left {
+    right: calc(100% + 70px);
 }
 .left > div {
     display: flex;
@@ -183,10 +189,10 @@ body, .view, canvas {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-.left > div:hover, .left > div.pinned {
+html:not(.mobile) .left > div:hover, .left > div.pinned {
     left: 100%;
 }
-.left > div:hover > .pin {
+html:not(.mobile) .left > div:hover > .pin {
     opacity: 1;
 }
 .left div[data-id] {
@@ -259,7 +265,7 @@ body, .view, canvas {
     border-left: 1px solid #aaaaaa;
     border-right: 1px solid #ffffff;
 }
-.bottom > div:hover {
+html:not(.mobile) .bottom > div:hover {
     opacity: 1;
     box-shadow: 0 0 5px 0 black;
 }
